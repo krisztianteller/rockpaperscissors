@@ -1,4 +1,3 @@
-alert("ACHTUNG!!!")
 
 //creating a random outcome
 
@@ -13,4 +12,23 @@ function computerPlay(){
    else{
        return "scissors";
    }
+};
+
+function playRound(playerSelection, computerSelection){
+    if(playerSelection === "rock" && computerSelection === "paper"){
+        return "You lose! Paper beats Rock.";
+    }
+    if(playerSelection === "paper" && computerSelection === "scissors"){
+        return "You lose! Scissors beats paper.";
+    }
+    if(playerSelection === "scissors" && computerSelection === "rock"){
+        return "You lose! Rock beats Scissors.";
+    } else {
+        return "You won"
+    }
+
 }
+
+const playerSelection = "paper";
+const computerSelection = computerPlay();
+console.log(playRound(playerSelection, computerSelection));
