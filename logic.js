@@ -1,6 +1,16 @@
 alert("ACHTUNG!!!")
-var possibilities = ["Rock", "Paper", "Scissors"];
+
+//creating a random outcome
+
 function computerPlay(){
-    return possibilities[Math.floor(Math.random() * possibilities.length)];
-    
+   const number = Math.floor(Math.random() * 1000);
+   if( number % 3 === 0){
+       return "rock";
+   } 
+   else if(number & 3 === 1){
+        return "paper";
+   }
+   else{
+       return "scissors";
+   }
 }
