@@ -32,7 +32,7 @@ function playRound(playerSelection, computerSelection){
 }
 
 };
-
+//create input
 const readline = require('readline');
 
 const rl = readline.createInterface({
@@ -42,7 +42,7 @@ const rl = readline.createInterface({
 
 rl.question('Some input', (answer) => {
   // TODO: Log the answer in a database
-  console.log(`Thank you for your valuable feedback: ${answer}`);
+  console.log(`user input result: ${answer}`);
 
   rl.close();
 });
